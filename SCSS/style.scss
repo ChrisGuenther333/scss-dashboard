@@ -1,12 +1,20 @@
-$dashColor: rgb(8, 50, 112);
+$dashColor: #1E1E2C;
 %big-card {
     background-color: $dashColor;
+    padding: 10px;
 }
 %small-card {
     background-color: $dashColor;
+    padding: 10px;
 }
 %listing {
 
+}
+%pfp {
+    height: 35px;
+    width: auto;
+    border: 0;
+    border-radius: 15px;
 }
 %flex-row {
     display: flex;
@@ -19,28 +27,37 @@ $dashColor: rgb(8, 50, 112);
  body {
     background: black;
     color: white;
+    align-items: center;
     h3 {
         color: gray
+    }
+ }
+ nav {
+    @extend %flex-row;
+    justify-content: space-between;
+    background-color: $dashColor;
+    padding: 15px;
+
+    .navRight {
+        @extend %flex-row;
+        justify-content: space-evenly
+    }
+
+    #search {
+        background-color: blue;
+        border: none;
+        border-radius: 15px;
     }
  }
  section {
     @extend %flex-row;
  }
  .dashboard {
- }
- nav {
-    @extend %flex-row;
-    justify-content: space-between;
-    background-color: $dashColor;
 
-    .navRight {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly
-    }
  }
  .sideNav {
     background-color: $dashColor;
+    border-top: 2px solid white;
 
     ul {
         list-style: none
@@ -57,4 +74,15 @@ $dashColor: rgb(8, 50, 112);
  }
  .smallCard {
     @extend %small-card;
+
+    .expectedEarnings {
+        @extend %flex-row;
+    }
+    img {
+        height: 50px;
+        width: auto;
+    }
  }
+.pfp {
+    @extend %pfp;
+}

@@ -1,12 +1,21 @@
 .bigCard {
-  background-color: rgb(8, 50, 112);
+  background-color: #1E1E2C;
+  padding: 10px;
 }
 
 .smallCard {
-  background-color: rgb(8, 50, 112);
+  background-color: #1E1E2C;
+  padding: 10px;
 }
 
-.row1, .row2, nav, section {
+.pfp {
+  height: 35px;
+  width: auto;
+  border: 0;
+  border-radius: 15px;
+}
+
+.smallCard .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
   display: flex;
   flex-direction: row;
 }
@@ -19,6 +28,7 @@
 body {
   background: black;
   color: white;
+  align-items: center;
 }
 body h3 {
   color: gray;
@@ -26,17 +36,27 @@ body h3 {
 
 nav {
   justify-content: space-between;
-  background-color: rgb(8, 50, 112);
+  background-color: #1E1E2C;
+  padding: 15px;
 }
 nav .navRight {
-  display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+}
+nav #search {
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
 }
 
 .sideNav {
-  background-color: rgb(8, 50, 112);
+  background-color: #1E1E2C;
+  border-top: 2px solid white;
 }
 .sideNav ul {
   list-style: none;
+}
+
+.smallCard img {
+  height: 50px;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */
