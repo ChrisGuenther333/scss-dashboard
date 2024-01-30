@@ -43,9 +43,10 @@ nav .navRight {
   justify-content: space-evenly;
 }
 nav #search {
-  background-color: blue;
+  background-color: #3c3c5c;
   border: none;
   border-radius: 15px;
+  color: white;
 }
 
 .sideNav {
