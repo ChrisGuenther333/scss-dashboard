@@ -1,0 +1,42 @@
+.bigCard {
+  background-color: rgb(8, 50, 112);
+}
+
+.smallCard {
+  background-color: rgb(8, 50, 112);
+}
+
+.row1, .row2, nav, section {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: black;
+  color: white;
+}
+body h3 {
+  color: gray;
+}
+
+nav {
+  justify-content: space-between;
+  background-color: rgb(8, 50, 112);
+}
+nav .navRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.sideNav {
+  background-color: rgb(8, 50, 112);
+}
+.sideNav ul {
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+$dashColor: rgb(8, 50, 112);
+%big-card {
+    background-color: $dashColor;
+}
+%small-card {
+    background-color: $dashColor;
+}
+%listing {
+
+}
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+ body {
+    background: black;
+    color: white;
+    h3 {
+        color: gray
+    }
+ }
+ section {
+    @extend %flex-row;
+ }
+ .dashboard {
+ }
+ nav {
+    @extend %flex-row;
+    justify-content: space-between;
+    background-color: $dashColor;
+
+    .navRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly
+    }
+ }
+ .sideNav {
+    background-color: $dashColor;
+
+    ul {
+        list-style: none
+    }
+ }
+ .cards {
+    @extend %flex-col;
+ }
+ .row1, .row2 {
+    @extend %flex-row;
+}
+ .bigCard {
+    @extend %big-card;
+ }
+ .smallCard {
+    @extend %small-card;
+ }
