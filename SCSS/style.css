@@ -1,7 +1,7 @@
 .card {
   background-color: #1E1E2C;
   padding: 2%;
-  width: 30%;
+  width: 450px;
   height: auto;
   border-radius: 15px;
 }
@@ -25,12 +25,12 @@ nav .navRight .pfp {
   background-color: #121217;
 }
 
-.card .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
+.card .expectedEarnings, .cards, section, nav .navRight, nav {
   display: flex;
   flex-direction: row;
 }
 
-.card, .cards {
+.card {
   display: flex;
   flex-direction: column;
 }
@@ -96,11 +96,14 @@ nav .navRight .notif {
 }
 
 .sideNav {
-  align-items: center;
   background-color: #1E1E2C;
   border-top: 1px solid white;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 300px;
+}
+.sideNav h3 {
+  text-align: center;
 }
 .sideNav ul {
   list-style: none;

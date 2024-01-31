@@ -5,7 +5,7 @@ $hoverColor: #121217;
 %card{
     background-color: $dashColor;
     padding: 2%;
-    width: 30%;
+    width: 450px;
     height: auto;
     border-radius: 15px;
 
@@ -113,11 +113,15 @@ $hoverColor: #121217;
     margin-left: 12%;
  }
  .sideNav {
-    align-items: center;
     background-color: $dashColor;
     border-top: 1px solid white;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+
+    h3 {
+        text-align: center;
+    }
 
     ul {
         list-style: none;
@@ -130,12 +134,13 @@ $hoverColor: #121217;
     }
  }
  .cards {
-    @extend %flex-col;
+    @extend %flex-row;
     flex-wrap: wrap
  }
- .row1, .row2 {
-    @extend %flex-row;
-}
+//  .row1, .row2 {
+//     @extend %flex-row;
+// 
+// }
  .card {
     @extend %card;
     @extend %flex-col;
