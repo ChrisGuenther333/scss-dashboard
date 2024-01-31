@@ -2,10 +2,12 @@ $dashColor: #1E1E2C;
 %big-card {
     background-color: $dashColor;
     padding: 10px;
+    max-height: 400px;
+    width: 400px;
 }
 %small-card {
     background-color: $dashColor;
-    padding: 10px;
+    padding: 5px;
 }
 %listing {
 
@@ -27,7 +29,7 @@ $dashColor: #1E1E2C;
  body {
     background: black;
     color: white;
-    align-items: center;
+
     h3 {
         color: gray
     }
@@ -36,7 +38,7 @@ $dashColor: #1E1E2C;
     @extend %flex-row;
     justify-content: space-between;
     background-color: $dashColor;
-    padding: 15px;
+    padding: 7px;
 
     .navRight {
         @extend %flex-row;
@@ -48,6 +50,7 @@ $dashColor: #1E1E2C;
         border: none;
         border-radius: 15px;
         color: white;
+        width: 20%;
     }
  }
  section {
@@ -66,24 +69,49 @@ $dashColor: #1E1E2C;
  }
  .cards {
     @extend %flex-col;
+    justify-content: space-evenly;
  }
  .row1, .row2 {
     @extend %flex-row;
 }
  .bigCard {
     @extend %big-card;
+    margin: 15px;
  }
- .smallCard {
-    @extend %small-card;
-
-    .expectedEarnings {
-        @extend %flex-row;
+ .smallCards {
+    width: 400px;
+    @extend %flex-col;
+    justify-content: space-evenly;
+    .smallCard {
+        @extend %small-card;
+        margin: 15px;
+    
+        .expectedEarnings {
+            @extend %flex-row;
+        }
     }
-    img {
-        height: 50px;
-        width: auto;
-    }
- }
+}
 .pfp {
     @extend %pfp;
+}
+img {
+    width: auto;
+}
+.EEGraph {
+    height: 70px;
+}
+.ADSGraph {
+    height: 50px;
+}
+.GBGraph {
+    height: 15px;
+}
+.multiplePfps {
+    height: 40px;
+}
+.STMGraph {
+    height: 175px;
+}
+.DPSGraph {
+    height: 200px;
 }
