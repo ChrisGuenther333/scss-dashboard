@@ -1,13 +1,9 @@
 $dashColor: #1E1E2C;
-%big-card {
+%card{
     background-color: $dashColor;
     padding: 10px;
     max-height: 400px;
     width: 400px;
-}
-%small-card {
-    background-color: $dashColor;
-    padding: 5px;
 }
 %listing {
 
@@ -37,7 +33,8 @@ $dashColor: #1E1E2C;
  nav {
     @extend %flex-row;
     justify-content: space-between;
-    background-color: $dashColor;
+
+align-items: center;    background-color: $dashColor;
     padding: 7px;
 
     .navRight {
@@ -51,20 +48,31 @@ $dashColor: #1E1E2C;
         border-radius: 15px;
         color: white;
         width: 20%;
+        height: 35px;
+        padding-left: 20px;
+    }
+    .notif {
+        height: auto;
+        width: 40px;
+        margin-right: 20px;
     }
  }
  section {
     @extend %flex-row;
  }
  .dashboard {
-
+    margin-left: 15%;
  }
  .sideNav {
+    align-items: center;
     background-color: $dashColor;
-    border-top: 2px solid white;
+    border-top: 1px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
 
     ul {
-        list-style: none
+        list-style: none;
+        padding: 0;
     }
  }
  .cards {
@@ -74,21 +82,13 @@ $dashColor: #1E1E2C;
  .row1, .row2 {
     @extend %flex-row;
 }
- .bigCard {
-    @extend %big-card;
-    margin: 15px;
- }
- .smallCards {
-    width: 400px;
+ .card {
+    @extend %card;
     @extend %flex-col;
-    justify-content: space-evenly;
-    .smallCard {
-        @extend %small-card;
-        margin: 15px;
-    
-        .expectedEarnings {
-            @extend %flex-row;
-        }
+    margin: 15px;
+
+    .expectedEarnings {
+        @extend %flex-row;
     }
 }
 .pfp {
@@ -98,16 +98,7 @@ img {
     width: auto;
 }
 .EEGraph {
-    height: 70px;
-}
-.ADSGraph {
-    height: 50px;
-}
-.GBGraph {
-    height: 15px;
-}
-.multiplePfps {
-    height: 40px;
+    height: 175px;
 }
 .STMGraph {
     height: 175px;

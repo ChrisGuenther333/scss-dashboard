@@ -1,13 +1,8 @@
-.bigCard {
+.card {
   background-color: #1E1E2C;
   padding: 10px;
   max-height: 400px;
   width: 400px;
-}
-
-.smallCards .smallCard {
-  background-color: #1E1E2C;
-  padding: 5px;
 }
 
 .pfp {
@@ -17,12 +12,12 @@
   border-radius: 15px;
 }
 
-.smallCards .smallCard .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
+.card .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
   display: flex;
   flex-direction: row;
 }
 
-.smallCards, .cards {
+.card, .cards {
   display: flex;
   flex-direction: column;
 }
@@ -37,6 +32,7 @@ body h3 {
 
 nav {
   justify-content: space-between;
+  align-items: center;
   background-color: #1E1E2C;
   padding: 7px;
 }
@@ -49,29 +45,36 @@ nav #search {
   border-radius: 15px;
   color: white;
   width: 20%;
+  height: 35px;
+  padding-left: 20px;
+}
+nav .notif {
+  height: auto;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.dashboard {
+  margin-left: 15%;
 }
 
 .sideNav {
+  align-items: center;
   background-color: #1E1E2C;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .sideNav ul {
   list-style: none;
+  padding: 0;
 }
 
 .cards {
   justify-content: space-evenly;
 }
 
-.bigCard {
-  margin: 15px;
-}
-
-.smallCards {
-  width: 400px;
-  justify-content: space-evenly;
-}
-.smallCards .smallCard {
+.card {
   margin: 15px;
 }
 img {
@@ -79,19 +82,7 @@ img {
 }
 
 .EEGraph {
-  height: 70px;
-}
-
-.ADSGraph {
-  height: 50px;
-}
-
-.GBGraph {
-  height: 15px;
-}
-
-.multiplePfps {
-  height: 40px;
+  height: 175px;
 }
 
 .STMGraph {
