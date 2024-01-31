@@ -19,7 +19,7 @@ nav .navRight .pfp {
 }
 
 .sideNav ul li:hover {
-  background-color: #0c0ce6;
+  background-color: #121217;
 }
 
 .card .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
@@ -32,13 +32,25 @@ nav .navRight .pfp {
   flex-direction: column;
 }
 
+nav .navRight .notif:hover, nav .navRight .pfp:hover {
+  background-color: white;
+  border-radius: 15px;
+}
+
 body {
   background: black;
   color: white;
   font-family: "Roboto Mono", monospace;
 }
 body h3 {
-  color: gray;
+  color: rgb(112, 112, 112);
+}
+body a {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 nav {
@@ -68,13 +80,13 @@ nav .navRight {
 }
 nav .navRight .pfp {
   margin-right: 20px;
+  padding: 2px;
 }
 nav .navRight .notif {
   height: auto;
   width: 40px;
   margin-right: 20px;
 }
-
 .dashboard {
   margin-left: 12%;
 }

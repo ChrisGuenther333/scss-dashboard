@@ -1,4 +1,7 @@
 $dashColor: #1E1E2C;
+$h3Color: rgb(112, 112, 112);
+$hoverColor: #121217;
+
 %card{
     background-color: $dashColor;
     padding: 20px;
@@ -23,7 +26,7 @@ $dashColor: #1E1E2C;
 }
 %listing {
     li:hover {
-        background-color: #0c0ce6;
+        background-color: $hoverColor;
     }
 }
 %flex-row {
@@ -34,13 +37,25 @@ $dashColor: #1E1E2C;
     display: flex;
     flex-direction: column;
 }
+%imageHover {
+    background-color: white;
+    border-radius: 15px;
+}
+
  body {
     background: black;
     color: white;
     font-family: "Roboto Mono", monospace;
 
     h3 {
-        color: gray
+        color: $h3Color;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+        border: 0;
     }
  }
  nav {
@@ -75,12 +90,19 @@ $dashColor: #1E1E2C;
         .pfp {
             @extend %pfp;
             margin-right: 20px;
+            padding: 2px;
+        }
+        .pfp:hover {
+            @extend %imageHover;
         }
 
         .notif {
             height: auto;
             width: 40px;
             margin-right: 20px;
+        }
+        .notif:hover {
+            @extend %imageHover;
         }
     }
  }
