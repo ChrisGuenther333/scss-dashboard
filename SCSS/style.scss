@@ -2,18 +2,29 @@ $dashColor: #1E1E2C;
 %card{
     background-color: $dashColor;
     padding: 20px;
-    max-height: 400px;
     width: 400px;
     border-radius: 15px;
-}
-%listing {
 
+    h2 {
+        margin-bottom: 2px;
+    }
+    h3 {
+        margin-top: 2px;
+    }
+}
+@mixin image-margin() {
+    margin-top: 40px;
 }
 %pfp {
     height: 35px;
     width: auto;
     border: 0;
     border-radius: 15px;
+}
+%listing {
+    li:hover {
+        background-color: #0c0ce6;
+    }
 }
 %flex-row {
     display: flex;
@@ -43,12 +54,8 @@ $dashColor: #1E1E2C;
         border: 1px solid #3c3c5c;
         border-radius: 10px;
         padding: 10px;
-        text-align: center
-    }
-
-    .navRight {
-        @extend %flex-row;
-        justify-content: space-evenly
+        text-align: center;
+        margin-left: 20px;
     }
 
     #search {
@@ -60,17 +67,28 @@ $dashColor: #1E1E2C;
         height: 35px;
         padding-left: 20px;
     }
-    .notif {
-        height: auto;
-        width: 40px;
-        margin-right: 20px;
+
+    .navRight {
+        @extend %flex-row;
+        justify-content: space-evenly;
+        
+        .pfp {
+            @extend %pfp;
+            margin-right: 20px;
+        }
+
+        .notif {
+            height: auto;
+            width: 40px;
+            margin-right: 20px;
+        }
     }
  }
  section {
     @extend %flex-row;
  }
  .dashboard {
-    margin-left: 15%;
+    margin-left: 12%;
  }
  .sideNav {
     align-items: center;
@@ -83,6 +101,7 @@ $dashColor: #1E1E2C;
         list-style: none;
         padding: 0;
 
+        @extend %listing;
         li {
             padding: 12px;
         }
@@ -104,17 +123,21 @@ $dashColor: #1E1E2C;
         @extend %flex-row;
     }
 }
-.pfp {
-    @extend %pfp;
-}
 img {
     width: auto;
 }
-.EEGraph {
-    height: 175px;
+.expectedEarnings {
+    @include image-margin();
+
+    .EEGraph {
+        height: 175px;
+    }
 }
 .STMGraph {
     height: 175px;
+}
+.ADSGraph {
+    margin-top: 60px;
 }
 .DPSGraph {
     height: 180px;

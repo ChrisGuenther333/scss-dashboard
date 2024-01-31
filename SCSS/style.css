@@ -1,16 +1,25 @@
 .card {
   background-color: #1E1E2C;
   padding: 20px;
-  max-height: 400px;
   width: 400px;
   border-radius: 15px;
 }
+.card h2 {
+  margin-bottom: 2px;
+}
+.card h3 {
+  margin-top: 2px;
+}
 
-.pfp {
+nav .navRight .pfp {
   height: 35px;
   width: auto;
   border: 0;
   border-radius: 15px;
+}
+
+.sideNav ul li:hover {
+  background-color: #0c0ce6;
 }
 
 .card .expectedEarnings, .row1, .row2, section, nav .navRight, nav {
@@ -43,9 +52,7 @@ nav .logo {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-}
-nav .navRight {
-  justify-content: space-evenly;
+  margin-left: 20px;
 }
 nav #search {
   background-color: #3c3c5c;
@@ -56,14 +63,20 @@ nav #search {
   height: 35px;
   padding-left: 20px;
 }
-nav .notif {
+nav .navRight {
+  justify-content: space-evenly;
+}
+nav .navRight .pfp {
+  margin-right: 20px;
+}
+nav .navRight .notif {
   height: auto;
   width: 40px;
   margin-right: 20px;
 }
 
 .dashboard {
-  margin-left: 15%;
+  margin-left: 12%;
 }
 
 .sideNav {
@@ -92,12 +105,19 @@ img {
   width: auto;
 }
 
-.EEGraph {
+.expectedEarnings {
+  margin-top: 40px;
+}
+.expectedEarnings .EEGraph {
   height: 175px;
 }
 
 .STMGraph {
   height: 175px;
+}
+
+.ADSGraph {
+  margin-top: 60px;
 }
 
 .DPSGraph {
