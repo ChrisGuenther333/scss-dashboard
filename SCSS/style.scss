@@ -4,23 +4,26 @@ $hoverColor: #121217;
 
 %card{
     background-color: $dashColor;
-    padding: 20px;
-    width: 400px;
+    padding: 2%;
+    width: 30%;
+    height: auto;
     border-radius: 15px;
 
     h2 {
         margin-bottom: 2px;
+        font-size: 150%;
     }
     h3 {
         margin-top: 2px;
+        font-size: 120%;
     }
 }
 @mixin image-margin() {
     margin-top: 40px;
 }
 %pfp {
-    height: 35px;
-    width: auto;
+    height: auto;
+    width: 35px;
     border: 0;
     border-radius: 15px;
 }
@@ -79,7 +82,8 @@ $hoverColor: #121217;
         border-radius: 15px;
         color: white;
         width: 20%;
-        height: 35px;
+        height: auto;
+        min-height: 35px;
         padding-left: 20px;
     }
 
@@ -92,16 +96,12 @@ $hoverColor: #121217;
             margin-right: 20px;
             padding: 2px;
         }
-        .pfp:hover {
-            @extend %imageHover;
-        }
-
         .notif {
             height: auto;
             width: 40px;
             margin-right: 20px;
         }
-        .notif:hover {
+        .pfp:hover, .notif:hover {
             @extend %imageHover;
         }
     }
@@ -131,7 +131,6 @@ $hoverColor: #121217;
  }
  .cards {
     @extend %flex-col;
-    justify-content: space-evenly;
  }
  .row1, .row2 {
     @extend %flex-row;
@@ -146,21 +145,22 @@ $hoverColor: #121217;
     }
 }
 img {
-    width: auto;
+    height: auto;
 }
 .expectedEarnings {
     @include image-margin();
 
     .EEGraph {
-        height: 175px;
+        width: 48%;
     }
 }
 .STMGraph {
-    height: 175px;
+    width: 95%;
 }
 .ADSGraph {
-    margin-top: 60px;
+    margin-top: 15%;
+    width: 90%;
 }
 .DPSGraph {
-    height: 180px;
+    width: 100%;
 }
