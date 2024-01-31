@@ -1,8 +1,9 @@
 .card {
   background-color: #1E1E2C;
-  padding: 10px;
+  padding: 20px;
   max-height: 400px;
   width: 400px;
+  border-radius: 15px;
 }
 
 .pfp {
@@ -25,6 +26,7 @@
 body {
   background: black;
   color: white;
+  font-family: "Roboto Mono", monospace;
 }
 body h3 {
   color: gray;
@@ -35,6 +37,12 @@ nav {
   align-items: center;
   background-color: #1E1E2C;
   padding: 7px;
+}
+nav .logo {
+  border: 1px solid #3c3c5c;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 nav .navRight {
   justify-content: space-evenly;
@@ -69,6 +77,9 @@ nav .notif {
   list-style: none;
   padding: 0;
 }
+.sideNav ul li {
+  padding: 12px;
+}
 
 .cards {
   justify-content: space-evenly;
@@ -90,5 +101,5 @@ img {
 }
 
 .DPSGraph {
-  height: 200px;
+  height: 180px;
 }/*# sourceMappingURL=style.css.map */

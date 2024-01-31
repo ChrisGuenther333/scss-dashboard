@@ -1,9 +1,10 @@
 $dashColor: #1E1E2C;
 %card{
     background-color: $dashColor;
-    padding: 10px;
+    padding: 20px;
     max-height: 400px;
     width: 400px;
+    border-radius: 15px;
 }
 %listing {
 
@@ -25,6 +26,7 @@ $dashColor: #1E1E2C;
  body {
     background: black;
     color: white;
+    font-family: "Roboto Mono", monospace;
 
     h3 {
         color: gray
@@ -33,9 +35,16 @@ $dashColor: #1E1E2C;
  nav {
     @extend %flex-row;
     justify-content: space-between;
-
-align-items: center;    background-color: $dashColor;
+    align-items: center;
+    background-color: $dashColor;
     padding: 7px;
+
+    .logo {
+        border: 1px solid #3c3c5c;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center
+    }
 
     .navRight {
         @extend %flex-row;
@@ -43,7 +52,7 @@ align-items: center;    background-color: $dashColor;
     }
 
     #search {
-        background-color: #3c3c5c;;
+        background-color: #3c3c5c;
         border: none;
         border-radius: 15px;
         color: white;
@@ -73,6 +82,10 @@ align-items: center;    background-color: $dashColor;
     ul {
         list-style: none;
         padding: 0;
+
+        li {
+            padding: 12px;
+        }
     }
  }
  .cards {
@@ -104,5 +117,5 @@ img {
     height: 175px;
 }
 .DPSGraph {
-    height: 200px;
+    height: 180px;
 }
