@@ -4,3 +4,5 @@ Make website more responsive
 
 Get better understanding of mixin vs extend
 Add functionality to buttons/icons
+
+Opt: Make each section change color when highlighted
