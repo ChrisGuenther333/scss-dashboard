@@ -131,6 +131,7 @@ $hoverColor: #121217;
  }
  .cards {
     @extend %flex-col;
+    flex-wrap: wrap
  }
  .row1, .row2 {
     @extend %flex-row;

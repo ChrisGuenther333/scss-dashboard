@@ -110,6 +110,10 @@ nav .navRight .notif {
   padding: 12px;
 }
 
+.cards {
+  flex-wrap: wrap;
+}
+
 .card {
   margin: 15px;
 }
