@@ -1,0 +1,2 @@
+- Fix responsiveness
+- Clicking anywhere other than notifList / pfpList will disable t
