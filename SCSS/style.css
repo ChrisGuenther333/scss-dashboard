@@ -86,7 +86,6 @@ nav #search {
 }
 nav .navRight {
   justify-content: space-evenly;
-  position: relative;
 }
 nav .navRight #notif {
   height: auto;
@@ -99,6 +98,28 @@ nav .navRight #pfp {
 }
 nav .navRight #notifList, nav .navRight #pfpList {
   position: absolute;
+}
+nav .navRight #notifList ul, nav .navRight #pfpList ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #3c3c5c;
+  border-radius: 15%;
+  background-color: #1E1E2C;
+}
+nav .navRight #notifList ul li, nav .navRight #pfpList ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+nav .navRight #notifList ul li:hover, nav .navRight #pfpList ul li:hover {
+  background-color: darkgreen;
+}
+nav .navRight #notifList ul hr, nav .navRight #pfpList ul hr {
+  margin: 0;
+  pad: 0;
+  border: 0.5px solid #3c3c5c;
+  color: #1E1E2C;
 }
 
 .dashboard {

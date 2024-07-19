@@ -36,6 +36,7 @@ function displayPfpList() {
         html =
         `<ul>
             <a><li>Profile</li></a>
+            <hr>
             <a><li>Logout</li></a>
         </ul>`
     }
