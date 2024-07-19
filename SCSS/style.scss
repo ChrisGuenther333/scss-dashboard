@@ -140,7 +140,8 @@ $hoverColor: #121217;
  }
  .cards {
     @extend %flex-row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 1050px
  }
 //  .row1, .row2 {
 //     @extend %flex-row;

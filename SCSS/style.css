@@ -119,6 +119,7 @@ nav .navRight .notif {
 
 .cards {
   flex-wrap: wrap;
+  max-width: 1050px;
 }
 
 .card {
