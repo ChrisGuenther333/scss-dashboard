@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./SCSS/style.css">
+    <script defer src="./main.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -14,8 +15,14 @@
         <a href="#"><span class="logo">Dashend</span></a>
         <input type="search" name="search" id="search" placeholder="Search">
         <div class="navRight">
-            <a href="#"><img class="notif" src="./Images/Notification Bell.png" alt="Notifications"></a>
-            <a href="#"><img class="pfp" src="./Images/Pfp.jpg" alt="User Profile"></a>
+            <a href="#">
+                    <img id="notif" src="./Images/Notification Bell.png" alt="Notifications">
+                    <div id="notifList"></div>
+            </a>
+            <a href="#">
+                <img id="pfp" src="./Images/Pfp.jpg" alt="User Profile">
+                <div id="pfpList"></div>
+            </a>
         </div>
     </nav>
     <section>

@@ -60,6 +60,7 @@ $hoverColor: #121217;
         margin: 0;
         padding: 0;
         border: 0;
+        position: relative;
     }
  }
  nav {
@@ -95,19 +96,26 @@ $hoverColor: #121217;
     .navRight {
         @extend %flex-row;
         justify-content: space-evenly;
-        
-        .pfp {
-            @extend %pfp;
-            margin-right: 20px;
-            padding: 2px;
-        }
-        .notif {
+        position: relative;
+
+        #notif {
             height: auto;
             width: 40px;
             margin-right: 20px;
         }
-        .pfp:hover, .notif:hover {
+        #pfp {
+            @extend %pfp;
+            margin-right: 20px;
+            padding: 2px;
+            
+        }
+
+        #pfp:hover, #notif:hover {
             @extend %imageHover;
+        }
+
+        #notifList, #pfpList {
+            position: absolute;
         }
     }
  }

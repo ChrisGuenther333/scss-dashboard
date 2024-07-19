@@ -15,7 +15,7 @@
   font-size: 120%;
 }
 
-nav .navRight .pfp {
+nav .navRight #pfp {
   height: auto;
   width: 35px;
   border: 0;
@@ -36,7 +36,7 @@ nav .navRight .pfp {
   flex-direction: column;
 }
 
-nav .navRight .pfp:hover, nav .navRight .notif:hover {
+nav .navRight #pfp:hover, nav .navRight #notif:hover {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
 }
@@ -55,6 +55,7 @@ body a {
   margin: 0;
   padding: 0;
   border: 0;
+  position: relative;
 }
 
 nav {
@@ -85,16 +86,21 @@ nav #search {
 }
 nav .navRight {
   justify-content: space-evenly;
+  position: relative;
 }
-nav .navRight .pfp {
-  margin-right: 20px;
-  padding: 2px;
-}
-nav .navRight .notif {
+nav .navRight #notif {
   height: auto;
   width: 40px;
   margin-right: 20px;
 }
+nav .navRight #pfp {
+  margin-right: 20px;
+  padding: 2px;
+}
+nav .navRight #notifList, nav .navRight #pfpList {
+  position: absolute;
+}
+
 .dashboard {
   margin-left: 12%;
 }
