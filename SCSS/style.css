@@ -4,6 +4,7 @@
   width: 450px;
   height: auto;
   border-radius: 15px;
+  transition: transform 0.1s ease-in-out;
 }
 .card h2 {
   margin-bottom: 2px;
@@ -36,7 +37,7 @@ nav .navRight .pfp {
 }
 
 nav .navRight .pfp:hover, nav .navRight .notif:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
 }
 
@@ -68,6 +69,9 @@ nav .logo {
   padding: 10px;
   text-align: center;
   margin-left: 20px;
+}
+nav .logo:hover {
+  border-color: rgba(255, 255, 255, 0.726);
 }
 nav #search {
   background-color: #3c3c5c;
@@ -120,6 +124,9 @@ nav .navRight .notif {
 .card {
   margin: 15px;
 }
+.card:hover {
+  transform: scale(1.05);
+}
 img {
   height: auto;
 }
@@ -142,4 +149,6 @@ img {
 
 .DPSGraph {
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

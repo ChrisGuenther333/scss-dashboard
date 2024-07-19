@@ -8,6 +8,7 @@ $hoverColor: #121217;
     width: 450px;
     height: auto;
     border-radius: 15px;
+    transition: transform 0.1s ease-in-out;
 
     h2 {
         margin-bottom: 2px;
@@ -41,7 +42,7 @@ $hoverColor: #121217;
     flex-direction: column;
 }
 %imageHover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.800);
     border-radius: 15px;
 }
 
@@ -74,6 +75,10 @@ $hoverColor: #121217;
         padding: 10px;
         text-align: center;
         margin-left: 20px;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.726);
+        }
     }
 
     #search {
@@ -145,6 +150,10 @@ $hoverColor: #121217;
     @extend %card;
     @extend %flex-col;
     margin: 15px;
+
+    &:hover {
+        transform: scale(1.05)
+    }
 
     .expectedEarnings {
         @extend %flex-row;
