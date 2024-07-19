@@ -113,7 +113,7 @@ nav .navRight #notifList ul li, nav .navRight #pfpList ul li {
   border: 0;
 }
 nav .navRight #notifList ul li:hover, nav .navRight #pfpList ul li:hover {
-  background-color: darkgreen;
+  background-color: #3c3c5c;
 }
 nav .navRight #notifList ul hr, nav .navRight #pfpList ul hr {
   margin: 0;

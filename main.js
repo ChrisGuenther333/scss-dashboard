@@ -15,7 +15,7 @@ function displayNotifList() {
         displayPfp ? displayPfpList(): displayPfp
         html =
         `<ul>
-            <a><li>None</li></a>
+            <li>None</li>
         </ul>`
     }
     else {
@@ -23,8 +23,6 @@ function displayNotifList() {
     }
 
     notifList.innerHTML = html
-
-    console.log(`DisplayNotif: ${displayNotif}`, `DisplayPFP: ${displayPfp}`)
 }
 
 function displayPfpList() {
@@ -44,6 +42,4 @@ function displayPfpList() {
         html = ''
     }
     pfpList.innerHTML = html
-
-    console.log(`DisplayNotif: ${displayNotif}`, `DisplayPFP: ${displayPfp}`)
 }
