@@ -67,6 +67,7 @@ $hoverColor: #121217;
     @extend %flex-row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     background-color: $dashColor;
     padding: 7px;
 
@@ -127,7 +128,7 @@ $hoverColor: #121217;
             }
             ul li {
                 margin: 0;
-                padding: 0;
+                padding: 4px;
                 border: 0;
 
                 &:hover {

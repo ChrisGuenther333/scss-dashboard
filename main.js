@@ -7,6 +7,17 @@ let displayPfp = false
 
 notif.addEventListener('click', displayNotifList)
 pfp.addEventListener('click', displayPfpList)
+document.addEventListener('click', event => {
+    if (event.target.id !== 'notif' && event.target.id !== 'pfp' && !event.target.classList.contains('notifListLi') && !event.target.classList.contains('pfpOption')) {
+        if (displayNotif) {
+            displayNotifList()
+        }
+        else if (displayPfp) {
+            displayPfpList()
+        }
+    }
+    console.log(event.target)
+})
 
 function displayNotifList() {
     let html = ''
@@ -15,7 +26,7 @@ function displayNotifList() {
         displayPfp ? displayPfpList(): displayPfp
         html =
         `<ul>
-            <li>None</li>
+            <li class="notifListLi">None</li>
         </ul>`
     }
     else {
@@ -33,9 +44,9 @@ function displayPfpList() {
         displayNotif ? displayNotifList(): displayNotif
         html =
         `<ul>
-            <a><li>Profile</li></a>
+            <a><li class="pfpOption">Profile</li></a>
             <hr>
-            <a><li>Logout</li></a>
+            <a><li class="pfpOption">Logout</li></a>
         </ul>`
     }
     else {

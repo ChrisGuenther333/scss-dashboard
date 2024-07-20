@@ -61,6 +61,7 @@ body a {
 nav {
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   background-color: #1E1E2C;
   padding: 7px;
 }
@@ -109,7 +110,7 @@ nav .navRight #notifList ul, nav .navRight #pfpList ul {
 }
 nav .navRight #notifList ul li, nav .navRight #pfpList ul li {
   margin: 0;
-  padding: 0;
+  padding: 4px;
   border: 0;
 }
 nav .navRight #notifList ul li:hover, nav .navRight #pfpList ul li:hover {
